@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Calculadora IMC</title>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <h1>Calculadora de IMC</h1>
+        <form method="get" action="./calculoimc.php">
+            <fieldset>
+                <label for="peso">Digite seu peso</label>
+                <input
+                    type="number"
+                    name="peso"
+                    min="0"
+                    max="300"
+                    step="0.01"
+                    placeholder="Exemplo: 75,8"
+                    required
+                />
+                <label for="altura">Digite sua altura</label>
+                <input
+                    type="number"
+                    name="altura"
+                    min="0"
+                    max="250"
+                    step="0.01"
+                    placeholder="Exemplo: 1,95"
+                    required
+                />
+                <input type="submit" value="Calcular" id="button" />
+            </fieldset>
+        </form>
+    </body>
+</html>
